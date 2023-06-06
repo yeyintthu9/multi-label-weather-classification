@@ -62,7 +62,7 @@ There are two available backbone options.
 - Resnet50
 - Inceptionv2
 
-For changing the model backbone, You can change the related params under [backbone](./config/config.yml#17) in ***config.yml***
+For changing the model backbone, You can change the related params under [backbone](./config/config.yml#L17) in ***config.yml***
 
 
 ## Model Architecture
