@@ -77,7 +77,6 @@ The dataset used for this repository is a combined dataset of [multi-label-weath
 ## Additional features 
 
 ### logging performance metrics, configuration params and the trained model as MLflow model format
-
 - This helps you facilitate your development workflow and give you a standard model format to be used in a variety of many downstream tools.
 - You can easily analyze and explore your past trainings including metrics and artifacts via simply
 
@@ -90,7 +89,7 @@ Currently, I have trained the model using resnet50 and inceptionv2 backbones res
 
 ### Evaluation results of the pretrained model with Inceptionv2 backbone
 
-
+\
 
 Classification report for sunny weather classification model:
 
@@ -103,7 +102,7 @@ Classification report for sunny weather classification model:
 
   Overall accuracy : **0.93**
 
-
+\
 
 Classification report for cloudy weather classification model:
 
@@ -116,7 +115,7 @@ Classification report for cloudy weather classification model:
 
   Overall accuracy : **0.9075**
 
-
+\
 
 Classification report for foggy weather classification model:
 
@@ -129,7 +128,7 @@ Classification report for foggy weather classification model:
 
   Overall accuracy : **0.932**
 
-
+\
 
 Classification report for rainy weather classification model:
 
@@ -142,7 +141,7 @@ Classification report for rainy weather classification model:
 
   Overall accuracy : **0.929**
 
-
+\
 
 Classification report for snowy weather classification model:
 
@@ -155,12 +154,12 @@ Classification report for snowy weather classification model:
 
   Overall accuracy : **0.9665**
 
-
-
+\
 
 
 ### Evaluation results of the pretrained model with Resnet50 backbone
 
+\
 
 Classification report for sunny weather classification model:
 
@@ -173,7 +172,7 @@ Classification report for sunny weather classification model:
 
   Overall accuracy : **0.9265**
 
-
+\
 
 Classification report for cloudy weather classification model:
 
@@ -186,7 +185,7 @@ Classification report for cloudy weather classification model:
 
   Overall accuracy : **0.903**
 
-
+\
 
 Classification report for foggy weather classification model:
 
@@ -199,7 +198,7 @@ Classification report for foggy weather classification model:
 
   Overall accuracy : **0.929**
 
-
+\
 
 Classification report for rainy weather classification model:
 
@@ -212,7 +211,7 @@ Classification report for rainy weather classification model:
 
   Overall accuracy : **0.929**
 
-
+\
 
 Classification report for snowy weather classification model:
 
