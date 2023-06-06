@@ -1,0 +1,16 @@
+name: multi-label-weather-classification
+
+python_env: config/python_env.yml
+
+entry_points:
+  main:
+    parameters:
+      operation_type: {type: str, default: train}
+      config_path: {type: path, default: ./config/config.yml}
+
+    command: |
+          python main.py {operation_type} \
+            --config {config_path}
+  check-status:
+    command: |
+          python -c "print(\" \n Environment Setup completed! \n \")"  

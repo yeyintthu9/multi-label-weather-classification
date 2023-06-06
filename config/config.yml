@@ -1,0 +1,35 @@
+dataset:
+  train_images_root: ./multi-label-weather-data/dataset/data/train/ # root of training images
+  val_images_root: ./multi-label-weather-data/dataset/data/test/ # root dir of validation images
+  train_path: ./multi-label-weather-data/dataset/data/train.txt # path of training label file
+  test_path: ./multi-label-weather-data/dataset/data/test.txt # path of testing label file
+  val_path: ./multi-label-weather-data/dataset/data/test.txt # path of validation label file
+  classes_path: ./multi-label-weather-data/dataset/data/classes.txt # path of classes file
+  batch_size: 8
+  mean :         
+    - 0.485
+    - 0.456
+    - 0.406
+  std:
+    - 0.229
+    - 0.224
+    - 0.225
+backbone:
+  type: resnet50 # or `inceptionv2`
+  frozen_layers: 6 # 4 for inceptionv2 is an appropiate choice
+  input_size: # input size of backbone model, 299X299 for resnet50
+    - 299
+    - 299
+training:
+  lr: 0.0001
+  epochs: 10
+  milestones: [2, 4, 4]
+evaluation:
+  model_file: ./multi-label-weather-data/models/resnet50_backbone/best_model.pt
+device: cuda
+num_workers: 0
+
+saved_dir: ./outputs/ # to save outputs of training operation
+validated_images_dir: ./result_images/ # to save outputs of validation operation
+log_dir: ./logs # to save log files of operations 
+mlflow_exp_name: resnet50-exp

@@ -1,0 +1,7 @@
+__pycache__/
+logs/
+mlruns/
+outputs/
+multi-label-weather-data/
+result_images/
+predicted_images/
