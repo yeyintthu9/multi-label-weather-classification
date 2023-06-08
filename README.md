@@ -32,7 +32,7 @@ make run-as-mlflow-project OPERATION=<operation> CONFIG=<config_path>
     - **train** : Simply train the model and saved best and last checkpoints
     - **train_eval** : Train the model and then evaluate the best checkpoint on the unseen test dataset
     - **evaluate** : Evaluate the model on the unseen test dataset
-    - **validate** : Visualize the model prediction and compare with ground truth value on the unseen validation/test dataset.  [Sample](./assets/sample2.jpg) 
+    - **validate** : Visualize the model prediction and compare with ground truth value on the unseen validation/test dataset.  [Sample](./assets/sample.jpg) 
 - The value of **config_path** is set default to config [config.yml](./config/config.yml). So, you can leave it as optional.
 
 - So, for example, if you want to train and evaluate the best checkpoint model, you can run
